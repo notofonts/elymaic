@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.1">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="400" maximum="400" default="400">
+      <map input="400" output="100"/>
+    </axis>
+  </axes>
+  <sources>
+    <source filename="NotoSansElymaic-Italic.ufo" name="Noto Sans Elymaic Italic" familyname="Noto Sans Elymaic" stylename="Italic">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance name="Noto Sans Elymaic Regular" familyname="Noto Sans Elymaic" stylename="Regular" filename="instance_ufos/NotoSansElymaic-Regular.ufo">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+      </location>
+      <kerning/>
+      <info/>
+      <lib>
+        <dict>
+          <key>com.schriftgestaltung.customParameters</key>
+          <array>
+            <array>
+              <string>panose</string>
+              <array>
+                <integer>2</integer>
+                <integer>0</integer>
+                <integer>0</integer>
+                <integer>0</integer>
+                <integer>0</integer>
+                <integer>0</integer>
+                <integer>0</integer>
+                <integer>0</integer>
+                <integer>0</integer>
+                <integer>0</integer>
+              </array>
+            </array>
+          </array>
+          <key>com.schriftgestaltung.export</key>
+          <true/>
+          <key>com.schriftgestaltung.intanceInterpolations</key>
+          <dict>
+            <key>A63E58D2-94F7-438A-BA5A-DED0E72B5837</key>
+            <integer>1</integer>
+          </dict>
+          <key>com.schriftgestaltung.manualInterpolation</key>
+          <false/>
+          <key>com.schriftgestaltung.weight</key>
+          <string>Normal</string>
+          <key>com.schriftgestaltung.width</key>
+          <string>Medium (normal)</string>
+        </dict>
+      </lib>
+    </instance>
+  </instances>
+  <lib>
+    <dict>
+      <key>GSDimensionPlugin.Dimensions</key>
+      <dict>
+        <key>C1E7DAF6-BB1E-4783-B7AC-70632970FB79</key>
+        <dict>
+          <key>nV</key>
+          <string>90</string>
+          <key>nd</key>
+          <string>71</string>
+          <key>oH</key>
+          <string>80</string>
+          <key>oV</key>
+          <string>98</string>
+          <key>tH</key>
+          <string> </string>
+        </dict>
+      </dict>
+    </dict>
+  </lib>
+</designspace>

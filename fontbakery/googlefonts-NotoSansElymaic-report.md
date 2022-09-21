@@ -2,11 +2,7 @@
 
 Fontbakery version: 0.8.10
 
-<details><summary><b>[9] NotoSansElymaic-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking font version fields (head and name table). (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/head.html#com.google.fonts/check/font_version">com.google.fonts/check/font_version</a>)</summary><div>
-
-
-* 🔥 **FAIL** head version is "1.00101" while name version string (for platform 3, encoding 1) is "Version 1.000; ttfautohint (v1.8.4.7-5d5b)". [code: mismatch]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
+<details><summary><b>[8] NotoSansElymaic-Regular.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
 
 
 * ⚠ **WARN** The stylistic set ss01 lacks a description string on the 'name' table. [code: missing-description]
@@ -91,7 +87,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-short-s
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 1 | 8 | 111 | 8 | 99 | 0 |
+| 0 | 0 | 8 | 111 | 8 | 100 | 0 |
 | 0% | 0% | 4% | 49% | 4% | 44% | 0% |
 
 **Note:** The following loglevels were omitted in this report:

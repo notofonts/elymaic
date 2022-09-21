@@ -3,13 +3,21 @@
 <plist version="1.0">
   <dict>
     <key>ascender</key>
-    <integer>720</integer>
+    <integer>920</integer>
     <key>capHeight</key>
     <integer>570</integer>
     <key>copyright</key>
     <string>Copyright 2022 The Noto Project Authors (https://github.com/notofonts/elymaic)</string>
     <key>descender</key>
     <integer>-280</integer>
+    <key>openTypeOS2TypoAscender</key>
+    <integer>920</integer>
+    <key>openTypeOS2WinAscent</key>
+    <integer>995</integer>
+    <key>openTypeOS2WinDescent</key>
+    <integer>290</integer>
+    <key>openTypeOS2TypoLineGap</key>
+    <integer>0</integer>
     <key>familyName</key>
     <string>Noto Sans Elymaic</string>
     <key>guidelines</key>
@@ -92,7 +100,7 @@
     <key>versionMajor</key>
     <integer>1</integer>
     <key>versionMinor</key>
-    <integer>0</integer>
+    <integer>1</integer>
     <key>xHeight</key>
     <integer>570</integer>
   </dict>

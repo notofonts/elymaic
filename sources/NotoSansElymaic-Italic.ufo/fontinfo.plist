@@ -58,7 +58,7 @@
     <key>openTypeNameManufacturerURL</key>
     <string>http://www.google.com/get/noto/</string>
     <key>openTypeNameVersion</key>
-    <string>Version 1.000</string>
+    <string>Version 1.001</string>
     <key>openTypeOS2Selection</key>
     <array>
       <integer>7</integer>

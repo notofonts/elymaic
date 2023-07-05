@@ -17,7 +17,7 @@
     </source>
   </sources>
   <instances>
-    <instance name="Noto Sans Elymaic Regular" familyname="Noto Sans Elymaic" stylename="Regular" filename="instance_ufos/NotoSansElymaic-Regular.ufo">
+    <instance name="Noto Sans Elymaic Italic" familyname="Noto Sans Elymaic" stylename="Italic" filename="instance_ufos/NotoSansElymaic-Italic.ufo">
       <location>
         <dimension name="Weight" xvalue="100"/>
       </location>

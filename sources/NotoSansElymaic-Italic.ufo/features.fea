@@ -10,9 +10,7 @@ feature ss03;
 } aalt;
 
 feature dlig {
-# automatic
-lookupflag IgnoreMarks;
-sub zayin-elym yodh-elym by zayin_yodh-elym;
+
 } dlig;
 
 feature salt {

@@ -65,3 +65,9 @@ sub sadhe-elym by sadhe-elym.ss01;
 sub zayin_yodh-elym by zayin_yodh-elym.ss01;
 } ss03;
 
+feature ss04 {
+featureNames {
+    name "Allographs found in Tang-i Butan";
+};
+sub zayin_yodh-elym by zayin_yodh-elym.ss02;
+} ss03;

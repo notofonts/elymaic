@@ -32,7 +32,7 @@
       </dict>
     </array>
     <key>italicAngle</key>
-    <integer>-5</integer>
+    <integer>0</integer><!-- but not really -->
     <key>openTypeHeadCreated</key>
     <string>2019/12/04 11:05:40</string>
     <key>openTypeNameDescription</key>

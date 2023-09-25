@@ -2,9 +2,7 @@ buildVariable: false
 familyName: Noto Sans Elymaic
 googleFonts: true
 includeSubsets:
-- from:
-    repo: notofonts/latin-greek-cyrillic
-    path: sources/NotoSans-Italic.glyphspackage
+- from: Noto Sans
   name: GF_Latin_Core
 sources:
 - NotoSansElymaic.designspace

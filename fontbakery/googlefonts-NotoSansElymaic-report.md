@@ -1,24 +1,46 @@
-## Fontbakery report
+## FontBakery report
 
-Fontbakery version: 0.8.10
+fontbakery version: 0.9.2
 
-<details><summary><b>[8] NotoSansElymaic-Regular.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
+<details><summary><b>[10] NotoSansElymaic-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
-* ⚠ **WARN** The stylistic set ss01 lacks a description string on the 'name' table. [code: missing-description]
-* ⚠ **WARN** The stylistic set ss02 lacks a description string on the 'name' table. [code: missing-description]
-* ⚠ **WARN** The stylistic set ss03 lacks a description string on the 'name' table. [code: missing-description]
+* 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
+
+
+* 🔥 **FAIL** No dotted circle glyph present and font uses a complex shaper [code: missing-dotted-circle-complex]
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
+
+
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
+
+ * U+02C7 CARON: try adding one of: yi, canadian-aboriginal, tifinagh
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
+ * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
+ * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: math, malayalam, old-permic, syriac, tai-le, canadian-aboriginal, coptic, tifinagh
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
+ * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+
+Or you can add the above codepoints to one of the subsets supported by the font: `elymaic`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
 * ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-
-	- u10FF6.ss02
- [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
@@ -30,14 +52,19 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Check math signs have the same width. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/math_signs_width">com.google.fonts/check/math_signs_width</a>)</summary><div>
 
 
-* ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
+* ⚠ **WARN** The most common width is 572 among a set of 6 math glyphs.
+The following math glyphs have a different width, though:
+
+Width = 322:
+minus
+ [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Are any segments inordinately short? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_short_segments">com.google.fonts/check/outline_short_segments</a>)</summary><div>
 
 
@@ -61,34 +88,175 @@ The following glyphs do not have the recommended number of contours:
 
 	* Q (U+0051) contains a short segment B<<403.5,-9.5>-<397.0,-10.0>-<391.0,-10.0>>
 
-	* W (U+0057) contains a short segment B<<468.0,577.5>-<463.0,600.0>-<461.0,609.0>> 
+	* W (U+0057) contains a short segment B<<468.0,577.5>-<463.0,600.0>-<461.0,609.0>>
 
-	* And 68 more.
+	* a (U+0061) contains a short segment L<<399.0,76.0>--<395.0,76.0>>
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-short-segments]
+	* d (U+0064) contains a short segment L<<446.0,72.0>--<442.0,72.0>>
+
+	* m (U+006D) contains a short segment L<<169.0,463.0>--<174.0,463.0>>
+
+	* n (U+006E) contains a short segment L<<169.0,463.0>--<174.0,463.0>>
+
+	* p (U+0070) contains a short segment L<<169.0,463.0>--<173.0,463.0>>
+
+	* r (U+0072) contains a short segment L<<167.0,438.0>--<171.0,438.0>>
+
+	* u (U+0075) contains a short segment L<<448.0,71.0>--<444.0,71.0>>
+
+	* Ntilde (U+00D1) contains a short segment L<<176.0,593.0>--<172.0,593.0>>
+
+	* Ntilde (U+00D1) contains a short segment L<<582.0,123.0>--<586.0,123.0>>
+
+	* germandbls (U+00DF) contains a short segment B<<382.0,412.0>-<382.0,399.0>-<388.5,388.0>>
+
+	* agrave (U+00E0) contains a short segment L<<399.0,76.0>--<395.0,76.0>>
+
+	* aacute (U+00E1) contains a short segment L<<399.0,76.0>--<395.0,76.0>>
+
+	* acircumflex (U+00E2) contains a short segment L<<399.0,76.0>--<395.0,76.0>>
+
+	* atilde (U+00E3) contains a short segment L<<399.0,76.0>--<395.0,76.0>>
+
+	* adieresis (U+00E4) contains a short segment L<<399.0,76.0>--<395.0,76.0>>
+
+	* aring (U+00E5) contains a short segment L<<399.0,76.0>--<395.0,76.0>>
+
+	* ntilde (U+00F1) contains a short segment L<<169.0,463.0>--<174.0,463.0>>
+
+	* ugrave (U+00F9) contains a short segment L<<448.0,71.0>--<444.0,71.0>>
+
+	* uacute (U+00FA) contains a short segment L<<448.0,71.0>--<444.0,71.0>>
+
+	* ucircumflex (U+00FB) contains a short segment L<<448.0,71.0>--<444.0,71.0>>
+
+	* udieresis (U+00FC) contains a short segment L<<448.0,71.0>--<444.0,71.0>>
+
+	* amacron (U+0101) contains a short segment L<<399.0,76.0>--<395.0,76.0>>
+
+	* abreve (U+0103) contains a short segment L<<399.0,76.0>--<395.0,76.0>>
+
+	* aogonek (U+0105) contains a short segment L<<399.0,76.0>--<395.0,76.0>>
+
+	* dcaron (U+010F) contains a short segment L<<446.0,72.0>--<442.0,72.0>>
+
+	* dcroat (U+0111) contains a short segment L<<445.0,72.0>--<441.0,72.0>>
+
+	* Nacute (U+0143) contains a short segment L<<176.0,593.0>--<172.0,593.0>>
+
+	* Nacute (U+0143) contains a short segment L<<582.0,123.0>--<586.0,123.0>>
+
+	* nacute (U+0144) contains a short segment L<<169.0,463.0>--<174.0,463.0>>
+
+	* uni0145 (U+0145) contains a short segment L<<176.0,593.0>--<172.0,593.0>>
+
+	* uni0145 (U+0145) contains a short segment L<<582.0,123.0>--<586.0,123.0>>
+
+	* uni0146 (U+0146) contains a short segment L<<169.0,463.0>--<174.0,463.0>>
+
+	* Ncaron (U+0147) contains a short segment L<<176.0,593.0>--<172.0,593.0>>
+
+	* Ncaron (U+0147) contains a short segment L<<582.0,123.0>--<586.0,123.0>>
+
+	* ncaron (U+0148) contains a short segment L<<169.0,463.0>--<174.0,463.0>>
+
+	* Eng (U+014A) contains a short segment L<<176.0,593.0>--<172.0,593.0>>
+
+	* Eng (U+014A) contains a short segment L<<582.0,142.0>--<586.0,142.0>>
+
+	* eng (U+014B) contains a short segment L<<170.0,463.0>--<175.0,463.0>>
+
+	* racute (U+0155) contains a short segment L<<167.0,438.0>--<171.0,438.0>>
+
+	* uni0157 (U+0157) contains a short segment L<<167.0,438.0>--<171.0,438.0>>
+
+	* rcaron (U+0159) contains a short segment L<<167.0,438.0>--<171.0,438.0>>
+
+	* umacron (U+016B) contains a short segment L<<448.0,71.0>--<444.0,71.0>>
+
+	* ubreve (U+016D) contains a short segment L<<448.0,71.0>--<444.0,71.0>>
+
+	* uring (U+016F) contains a short segment L<<448.0,71.0>--<444.0,71.0>>
+
+	* uhungarumlaut (U+0171) contains a short segment L<<448.0,71.0>--<444.0,71.0>>
+
+	* Uogonek (U+0172) contains a short segment B<<539.5,-158.5>-<551.0,-156.0>-<559.0,-155.0>>
+
+	* uogonek (U+0173) contains a short segment L<<448.0,71.0>--<444.0,71.0>>
+
+	* Wcircumflex (U+0174) contains a short segment B<<468.0,577.5>-<463.0,600.0>-<461.0,609.0>>
+
+	* Wgrave (U+1E80) contains a short segment B<<468.0,577.5>-<463.0,600.0>-<461.0,609.0>>
+
+	* Wacute (U+1E82) contains a short segment B<<468.0,577.5>-<463.0,600.0>-<461.0,609.0>>
+
+	* Wdieresis (U+1E84) contains a short segment B<<468.0,577.5>-<463.0,600.0>-<461.0,609.0>>
+
+	* Euro (U+20AC) contains a short segment B<<184.0,390.0>-<183.0,380.0>-<183.0,371.0>>
+
+	* Euro (U+20AC) contains a short segment B<<183.0,371.0>-<183.0,362.0>-<183.0,352.0>>
+
+	* Euro (U+20AC) contains a short segment B<<183.0,352.0>-<183.0,343.0>-<183.0,332.5>>
+
+	* Euro (U+20AC) contains a short segment B<<183.0,332.5>-<183.0,322.0>-<184.0,311.0>>
+
+	* Euro (U+20AC) contains a short segment B<<95.0,311.0>-<94.0,323.0>-<94.0,331.0>>
+
+	* Euro (U+20AC) contains a short segment B<<94.0,331.0>-<94.0,339.0>-<94.0,352.0>>
+
+	* Euro (U+20AC) contains a short segment B<<94.0,352.0>-<94.0,363.0>-<94.5,373.5>>
+
+	* Euro (U+20AC) contains a short segment B<<94.5,373.5>-<95.0,384.0>-<95.0,390.0>>
+
+	* trademark (U+2122) contains a short segment L<<386.0,633.0>--<382.0,633.0>>
+
+	* u10FE1 (U+10FE1) contains a short segment B<<353.0,314.0>-<347.0,314.0>-<342.0,315.0>>
+
+	* u10FE6 (U+10FE6) contains a short segment B<<471.0,493.0>-<465.0,494.0>-<459.5,494.0>>
+
+	* u10FE6 (U+10FE6) contains a short segment B<<459.5,494.0>-<454.0,494.0>-<448.0,494.0>>
+
+	* u10FF2 (U+10FF2) contains a short segment L<<267.0,419.0>--<267.0,419.0>>
+
+	* u10FF3 (U+10FF3) contains a short segment B<<485.0,419.0>-<485.0,424.0>-<485.0,429.0>>
+
+	* u10FF4 (U+10FF4) contains a short segment L<<294.0,570.0>--<300.0,570.0>>
+
+	* u10FF4 (U+10FF4) contains a short segment L<<752.0,498.0>--<752.0,498.0>> [code: found-short-segments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* u10FF2 (U+10FF2): L<<365.0,490.0>--<358.0,419.0>> -> L<<358.0,419.0>--<305.0,-151.0>> 
+	* u10FF2 (U+10FF2): L<<365.0,490.0>--<358.0,419.0>> -> L<<358.0,419.0>--<305.0,-151.0>>
 
-	* And u10FF4 (U+10FF4): L<<294.0,570.0>--<300.0,570.0>> -> L<<300.0,570.0>--<760.0,579.0>> [code: found-colinear-vectors]
+	* u10FF4 (U+10FF4): L<<294.0,570.0>--<300.0,570.0>> -> L<<300.0,570.0>--<760.0,579.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have jaggy segments:
 
-	* u10FF4 (U+10FF4): B<<855.0,479.0>-<824.0,502.0>-<752.0,498.0>>/L<<752.0,498.0>--<752.0,498.0>> = 3.1798301198641643 
+	* u10FF4 (U+10FF4): B<<855.0,479.0>-<824.0,502.0>-<752.0,498.0>>/L<<752.0,498.0>--<752.0,498.0>> = 3.1798301198641643
 
-	* And u10FF4 (U+10FF4): L<<752.0,498.0>--<752.0,498.0>>/L<<752.0,498.0>--<675.0,497.0>> = 0.744059202888511 [code: found-jaggy-segments]
+	* u10FF4 (U+10FF4): L<<752.0,498.0>--<752.0,498.0>>/L<<752.0,498.0>--<675.0,497.0>> = 0.744059202888511 [code: found-jaggy-segments]
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
+
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Belarusian (Cyrl, 10,064,517 speakers), Basaa (Latn, 332,940 speakers), Navajo (Latn, 166,319 speakers), Ukrainian (Cyrl, 29,273,587 speakers). [code: soft-dotted]
 </div></details><br></div></details>
+
 ### Summary
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 8 | 111 | 8 | 100 | 0 |
-| 0% | 0% | 4% | 49% | 4% | 44% | 0% |
+| 0 | 2 | 8 | 119 | 8 | 112 | 0 |
+| 0% | 1% | 3% | 48% | 3% | 45% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
